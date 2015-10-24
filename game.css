@@ -1,0 +1,40 @@
+.background    { background: rgb(52, 166, 251);
+                 table-layout: fixed;
+                 border-spacing: 0;   }
+.background td { padding: 0;          }
+
+
+
+@-webkit-keyframes glowing {
+  0% { background: rgb(204, 0, 0);}
+  50% { background: rgb(102, 0, 0);}
+  100% { background: rgb(204, 41, 0); }
+}
+
+.lava {
+  -webkit-animation: glowing 2000ms infinite;
+  -moz-animation: glowing 2000ms infinite;
+  -o-animation: glowing 2000ms infinite;
+  animation: glowing 2000ms infinite;
+}
+			
+
+			
+.wall          { background-image: url("bricks.jpg");   }
+.actor  { position: absolute;  }
+.coin   { background-image: url("food.gif");
+			background-size: 10px 10px;}
+.player { background-image: url("char.gif");	  
+		background-position: center;}
+.slow { background: rgb(96, 96, 96); }
+
+.game {
+  overflow: hidden;
+  max-width: 600px;
+  max-height: 450px;
+  position: relative;
+}
+
+.lost .player {
+  box-shadow: -4px -7px 8px red, 4px -7px 8px red;
+}
